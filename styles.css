@@ -96,7 +96,7 @@ main {
 }
 
 .property-item .price {
-    color: #1e831e;
+    color: #15b615;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -251,4 +251,13 @@ footer {
     font-size: large;
     font-weight: bold;
     text-decoration: none;
+}
+
+    #dostupné  {
+        color: #15b615;
+        font-size: large;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+
 }
