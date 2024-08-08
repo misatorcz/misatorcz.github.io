@@ -261,3 +261,34 @@ footer {
         font-family: Arial, sans-serif;
 
 }
+#nedostupné  {
+    color: #b61515;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+
+}
+#Iris {
+    color: rgb(156, 17, 199);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+    
+    
+    
+    #post {
+        color: rgb(13, 84, 177);
+        font-size: large;
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+    #tel {
+        color: #cfcccc;
+        font-size: large;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
