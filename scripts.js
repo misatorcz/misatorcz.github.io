@@ -38,3 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+    // Move unavailable items to the bottom
+    const unavailableItems = document.querySelectorAll('.unavailable');
+    unavailableItems.forEach(item => {
+        item.parentNode.appendChild(item);
+    });
