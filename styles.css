@@ -293,10 +293,9 @@ footer {
         text-decoration: none;
         
     }
-    #sleva {
-
-        color: rgb(155, 0, 0);
-        font-size: 1.2em;
+    #prodeji {
+        color: #cdcfcc;
+        font-size: large;
         font-weight: bold;
-        text-decoration: line-through
+        text-decoration: none;
     }
