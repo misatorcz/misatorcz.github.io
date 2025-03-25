@@ -2,9 +2,9 @@
 body {
     background: url('background.png') no-repeat center center fixed;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0); /* Lehká průhlednost pozadí */
     background-blend-mode: darken;
-    color: #cfcccc;
+    color: #ECF0F1;
     font-family: Arial, sans-serif;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
@@ -13,16 +13,17 @@ body {
 }
 
 header {
-    background-color: #1f1f1f;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #ECF0F1
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #020100;
     animation: slideInFromTop 1s ease-in-out;
 }
 
 header h1 {
     margin: 0;
-    color: #cfcccc;;
+    color: #ECF0F1;
 }
 
 nav ul {
@@ -36,10 +37,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #cfcccc;
+    color: #ECF0F1;   /*text nav*/
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #cfcccc;
+    border: 2px solid #ECF0F1;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -54,17 +55,18 @@ main {
     padding: 20px;
 }
 
-.section-box {
-    background-color: #1f1f1f;
+.section-box { 
+    background-color: rgba(0, 0, 0,0.72);
+    color: #ECF0F1;   /*text*/
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    border: 2px solid #000000;
+    border: 2px solid #020100;
     animation: fadeIn 1s ease-in-out;
 }
 
 .section-box h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #020100;
     padding-bottom: 10px;
     animation: fadeIn 1s ease-in-out;
 }
@@ -77,7 +79,7 @@ main {
 }
 
 .property-item {
-    background-color: #333;
+    background-color: #2C3E50;
     padding: 15px;
     border-radius: 8px;
     transition: transform 0.3s ease;
@@ -93,11 +95,11 @@ main {
 }
 
 .property-item h3 {
-    color: #cfcccc;
+    color: #ECF0F1;
 }
 
 .property-item .price {
-    color: #15b615;
+    color: #27AE60;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -105,9 +107,9 @@ main {
 .toggle-images {
     display: inline-block;
     margin-top: 10px;
-    color: #cfcccc;
+    color: #ECF0F1;
     text-decoration: none;
-    border: 2px solid #cfcccc;
+    border: 2px solid #ECF0F1;
     padding: 5px 10px;
     border-radius: 7px;
     transition: all 0.3s ease;
@@ -119,12 +121,11 @@ main {
 }
 
 footer {
-    background-color: #1f1f1f;
+    background-color: #95A5A6;
     padding: 20px;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #020100;
     animation: slideInFromBottom 1s ease-in-out;
 }
-
 
 /* Modal Styles */
 .modal {
@@ -136,12 +137,12 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: #2C3E50 ; /* Tmavší tyrkysová */
 }
 
 .modal-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Více obrázků - obrázky po 3 */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-content: center;
     padding: 20px;
@@ -170,7 +171,7 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: #ECF0F1;
 }
 
 /* Keyframes for animations */
@@ -245,57 +246,54 @@ footer {
     }
 }
 
-
 /* Guard24 */
 #Guard24 {
-    color: aqua;
+    color: #16A085;
     font-size: large;
     font-weight: bold;
     text-decoration: none;
 }
 
-    #dostupné  {
-        color: #15b615;
-        font-size: large;
-        font-weight: bold;
-        text-decoration: none;
-        font-family: Arial, sans-serif;
-
-}
-#nedostupné  {
-    color: #b61515;
+#dostupné {
+    color: #27AE60;
     font-size: large;
     font-weight: bold;
     text-decoration: none;
     font-family: Arial, sans-serif;
-
 }
+
+#nedostupné {
+    color: #881600;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
 #Iris {
     color: rgb(156, 17, 199);
     font-size: large;
     font-weight: bold;
     text-decoration: none;
 }
-    
-    
-    
-    #post {
-        color: rgb(13, 84, 177);
-        font-size: large;
-        font-weight: bold;
-        text-decoration: none;
 
-    }
-    #tel {
-        color: #cfcccc;
-        font-size: large;
-        font-weight: bold;
-        text-decoration: none;
-        
-    }
-    #prodeji {
-        color: #cdcfcc;
-        font-size: large;
-        font-weight: bold;
-        text-decoration: none;
-    }
+#post {
+    color: rgb(13, 84, 177);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tel {
+    color: #ECF0F1;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#prodeji {
+    color: #ECF0F1;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
